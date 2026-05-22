@@ -1,6 +1,5 @@
 from lib.interface import cabecalho
 
-
 def arquivoExiste(arq):
     try:
         a = open(arq, "rt")
@@ -35,7 +34,7 @@ def lerArquivo(arq):
 
 def cadastrar(arq, nome, idade):
     try:
-        a = open(arq, "w")
+        a = open(arq, "at")
     except:
         print("Erro ao abrir arquivo")
     else:
